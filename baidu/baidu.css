@@ -1,0 +1,294 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.nav{
+	position: relative;
+	width:1349px;
+	height:32px;
+	border-bottom:1px solid #ebebeb;
+}
+
+#main{
+	font-size:12px;
+	text-align:center;
+}
+
+.left-nav{
+	position: absolute;
+	left:0;
+	top:0;
+	width:316px;/*原为316px*/
+	height:32px;
+	padding-right: 15px;
+}
+
+.weather{
+	width:163px;
+	height: 34px;
+	float: left;
+}
+
+.weather-content{
+	width:148px;
+	height:20px;
+	margin:7px 0 0 15px;
+	color:#555;
+	line-height:20px;
+}
+
+.show-weather{
+	width:94px;
+	height:20px;
+	white-space: nowrap;
+	float: left;
+}
+
+.weather-city{
+	display: inline-block;
+	width:36px;
+	height: 14px;
+}
+
+.weather-img{
+	width:18px;
+	height:18px;
+	margin-right: 5px;
+	vertical-align: middle;
+	display:inline-block;
+	background-image: url(https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/weather/aladdin/png_18/a7.png);
+}
+
+.temperature{
+	display: inline-block;
+	width: 26px;
+	height: 14px;
+	margin-right: 9px;
+}
+
+.pollution{
+	width:54px;
+	height:20px;
+	white-space: nowrap;
+}
+
+.name{
+	color:#38f;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+.num{
+	margin-right: 7px;
+}
+
+/*.cut-off{
+	margin-right:11px;
+}*/
+
+.s-icons{
+	width:153px;/*原为153px*/
+	height:32px;
+	color:#555;
+	line-height:20px;
+	float: left;
+	text-align: center;
+}
+
+.s-icons a{
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 18px;
+	outline: none;
+	display: inline-block;
+	color:#555;
+}
+
+
+.right-nav{
+	right:0;
+	width:590px;
+	height:33px ;
+	position:absolute;
+	text-align: right;
+	top:0;
+	/*background-color: #fcc;*/
+}
+
+.menus a{
+	/*width:;*/
+	height:32px;
+	display: inline-block;
+	position: relative;
+	font-weight: bold;
+	line-height: 32px;
+	margin-left:19px;
+	color:#555;
+	font-size:13px;
+	/*text-align: right;*/
+}
+
+
+.user-name,
+.user-set{
+	font-weight: normal!important;
+}
+
+.more-pro{
+	width:86px;
+	height: 32px;
+	line-height: 32px;
+	color:white !important;
+	background: #398bfb;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #398bfb;
+	text-decoration: none;
+	vertical-align: top;
+	font-weight: normal !important;
+}
+
+.center{
+	width:1000px;
+	min-height:293px;
+	height: 38.2%;
+	position: relative;
+	margin:0 auto;
+	padding-bottom: 370px;
+}
+
+.s-form{
+	width:641px;
+	height:100%;
+	min-height:293px;
+	position: relative;
+	margin:0 auto 0 auto;
+	/*background-color: #ccc;*/
+}
+
+.logo{
+	width:100%;
+	height:181px;
+	position: absolute;
+	bottom: 40px;
+	text-align:center;
+	/*background-color:#0cf;*/
+	/*background-image: url(https://www.baidu.com/img/bd_logo1.png?where=super);*/
+}
+
+.logo img{
+	width:270px;
+	height:129px;
+	position: static;
+	margin-top: 33px auto 0 auto;
+	bottom: 10px;
+	left: 50%;
+}
+
+.search{
+	width:640px;
+	height:40px;
+	position: absolute;
+	bottom:0;
+	text-align: left;
+	
+}
+
+.search-form{
+	width:530px;
+	height: 40px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+
+.soutu-btn{
+	position: absolute;
+	right: 11px;
+	top:20px;
+	margin-top: -8px;
+	height: 16px;
+	width: 18px;
+	background:#fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
+}
+
+.frame{
+	width:480px !important;
+	height: 18px;
+	padding-right: 48px !important;
+	padding: 9px 7px;
+	border:1px solid #b8b8b8;
+	border-bottom: 1px solid #ccc;
+	border-right:0;
+	vertical-align: top;
+}
+
+.frame:hover{
+	border-color: #3385ff;
+}
+
+.btn{
+	width:102px;
+	height:38px;
+	line-height: 38px;
+	font-size: 16px;
+	color: white;
+	border:1px solid #38f;
+	border-bottom: 1px solid #2e7ae5;
+	background-color: #38f;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.bottom{
+	width:100%;
+	height:40px;
+	position: absolute;
+	bottom:12px;
+	left: 0;
+	overflow:hidden;
+	color:#999;
+	z-index: 3;
+	text-align:center;
+	/*background-color: #cff;*/
+}
+
+.top-layer a{
+	color:#999;
+}
+
+.hl{
+	display: inline;
+	text-align: center;
+}
+
+.sethome{
+	margin-right:12px;
+}
+
+.bt-layer{
+	padding-top:6px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+}
+
+.bt-layer a{
+	text-decoration: none;
+	color:#999;
+}
+
+.bt-layer a i{
+	display: inline-block;
+	width:14px;
+	height: 16px;
+	margin-right:6px;
+	background:url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/icon-police.png?v=md5);
+	vertical-align: middle;
+	margin-top: -4px;
+}
