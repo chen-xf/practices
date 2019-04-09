@@ -1,0 +1,188 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.container1{
+	width:300px;
+	/*height: 300px;*/
+	background-color: #fcc;
+	/*overflow:auto;解决高度塌陷，使浮动元素撑开父元素*/
+	/*overflow: hidden;*/
+}
+
+.container2{
+	/*width:300px;*/
+	height: 300px;
+	background-color: #ccc;
+}
+
+.left{
+	float:left;
+	width:50px;
+	height:50px;
+	background-color: #c9f;
+	opacity: 0.5;
+}
+.right{
+	float:right;
+	width:50px;
+	height:50px;
+	background-color: #c9f;
+}
+
+.container1::after{
+	content: '';
+	clear:both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.left1{
+	width:200px;
+	height:200px;
+	float: left;
+	background-color: #fcc;
+	opacity: 0.5;
+}
+
+.right1{
+	height: 200px;
+	background-color: #ccc;
+	margin-left: 200px;
+}
+
+.wrapper::after{
+	content: '';
+	clear:both;
+	display: block;
+	visibility: hidden;
+}
+
+.left2{
+	width:200px;
+	height:200px;
+	float: left;
+	background-color: #fcc;
+	opacity: 0.5;
+}
+
+.right2{
+	width:200px;
+	height:200px;
+	float: right;
+	background-color: #ccc;
+	opacity: 0.5;
+}
+
+.middle2{
+	height:200px;
+	margin:auto 200px;
+	background-color: #c9f;
+	/*margin-left:200px;
+	margin-right:200px;*/
+}
+
+.wrapper2::after{
+	content: '';
+	clear:both;
+	display: block;
+	visibility: hidden;
+}
+
+
+body{
+	text-align:center;
+}
+header{
+	height:50px;
+	background-color: pink;
+	line-height:50px;
+}
+.wrapper3{
+	padding:0 220px 0 200px;
+}
+.middle3,
+.left3,
+.right3{
+	position: relative;/*采用相对定位，使左右元素不压住中间元素*/
+	float:left;/*使left和right到middle两边*/
+    min-height: 300px;
+}
+.middle3{
+	background-color: red;
+	width:100%;
+}
+.left3{
+	left:-200px;/*根据相对定位，移动左右元素盒子宽度的距离,并可以填满空白*/
+	width:200px;
+	background-color: yellow;
+	margin-left:-100%;/*使左元素移动到最右边*/
+	opacity: 0.5;
+}
+.right3{
+	right:-220px;
+	width:220px;
+	background-color: blue;
+	margin-left:-220px;
+}
+
+.wrapper3::after{
+	content:'';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+.left4,
+.main,
+.right4{
+	float: left;
+	min-height: 300px;
+}
+.left4{
+	margin-left:-100%;
+	width:200px;
+	background-color: red;
+	opacity: 0.5;
+}
+
+.right4{
+	margin-left:-220px;
+	background-color: green;
+	width:220px;
+}
+
+.main{
+	width:100%;
+	background-color: pink;
+}
+
+.middle4{
+	margin:0 220px 0 200px;
+}
+.wrapper4::after{
+	content:'';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+.container3{
+    display: grid;
+    width: 580px;
+    height: 580px;
+    grid-gap:3px;/*行列间隙*/
+    grid-template-rows: repeat(5, 1fr);/*网格行数为5*/
+    grid-template-columns: repeat(5, 1fr);
+    background-color: red;
+} 
+.child {
+    grid-column-start: 6;/*列网格线开始*/
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color:green;
+    order：1;
+}

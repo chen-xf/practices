@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.container{
+	width:300px;
+	height:400px;
+	display: flex;
+}
+
+.left{
+	background-color: #fcc;
+	/*flex: 1;*/
+	width:20px;/*左右加宽使中间宽度自适应,注意去掉flex:1*/
+}
+
+.middle{
+	background-color: #ccc;
+	flex:1;
+}
+
+.right{
+	background-color: #c9f;
+	/*flex:1;*/
+	width:20px;
+}

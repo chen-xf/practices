@@ -1,0 +1,33 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.container{
+	width:400px;
+	height:200px;
+}
+
+.left{
+	background-color: #fcc;
+}
+
+.right{
+	background-color: #ccc;
+}
+
+.table{
+	display: table;
+	width:400px;
+	height:200px;
+}
+
+.left2{
+	display:table-cell;
+	background-color: #fcc;
+}
+
+.right2{
+	display: table-cell;
+	background-color: #ccc;
+}
